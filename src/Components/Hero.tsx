@@ -4,10 +4,6 @@ import React, { useState } from 'react';
 const Hero = () => {
   const [darkMode, setDarkMode] = useState(true);
 
-  const handleToggle = () => {
-    setDarkMode(!darkMode);
-  };
-
   return (
     <div className={`${darkMode ? 'bg-[#0f0c29]' : 'bg-white'} relative min-h-screen overflow-hidden`}>
       {/* Simple Particle Background with CSS */}
