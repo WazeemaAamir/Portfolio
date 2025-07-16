@@ -71,15 +71,15 @@ const Hero = () => {
 </section>
 
       <style jsx>{`
-        .particle {
+         .particle {
           position: absolute;
-          width: 20px;
-          height: 15px;
-          background: ${darkMode ? '#00FFFF' : '#007BFF'};
-          border-radius: 50%;
-          animation: moveParticle 10s linear infinite;
-          opacity: 0.7;
-        }
+         width: 20px;
+         height: 15px;
+         background: #00FFFF; /* Use a default or light color */
+         border-radius: 50%;
+         animation: moveParticle 10s linear infinite;
+         opacity: 0.7;
+       }
         .particle:nth-child(1) {
           top: 20%;
           left: 15%;
