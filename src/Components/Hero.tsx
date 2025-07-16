@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-
+import Image from "next/image":
 const Hero = () => {
   const [darkMode, setDarkMode] = useState(true);
 
@@ -58,11 +58,15 @@ const Hero = () => {
 
   {/* Right Image */}
   <div className="flex-1 mt-10 md:mt-0 flex justify-center md:justify-end">
-    <img
-      src="/Portfolio.jpg"
-      alt="Developer"
-      className="w-72 h-72 md:w-[350px] md:h-[350px] object-cover rounded-full shadow-2xl border-4 border-[#00FFFF]"
-    />
+  <Image
+  src="/Portfolio.jpg"
+  alt="Developer"
+  width={350}
+  height={350}
+  className="w-72 h-72 md:w-[350px] md:h-[350px] object-cover rounded-full shadow-2xl border-4 border-[#00FFFF]"
+  priority
+/>
+
   </div>
 </section>
 
