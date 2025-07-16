@@ -3,7 +3,8 @@ import React, { useState } from 'react';
 import Image from "next/image";
 
 const Hero = () => {
-  const [darkMode, setDarkMode] = useState(true);
+  // const [darkMode, setDarkMode] = useState(true);
+  const darkMode = true;
 
   return (
     <div className={`${darkMode ? 'bg-[#0f0c29]' : 'bg-white'} relative min-h-screen overflow-hidden`}>
