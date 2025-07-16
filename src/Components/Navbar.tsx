@@ -1,18 +1,18 @@
-"use client"
+"use client";
 import { useState } from "react";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  
 
   const navLinks = ["Home", "About", "Skills", "Contact"];
 
   return (
     <header className="w-full sticky top-0 z-50 bg-[#0f172a] shadow-md border-b border-gray-700">
       <nav className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-        <div className="flex items-center gap-2"> 
+        <div className="flex items-center gap-2">
           <span className="text-2xl font-bold text-indigo-400">My Portfolio</span>
         </div>
+
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-6">
           {navLinks.map((link) => (
@@ -24,6 +24,17 @@ const Navbar = () => {
               {link}
             </a>
           ))}
+        </div>
+
+        {/* Mobile Menu Button */}
+        <div className="md:hidden">
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="text-gray-300 hover:text-indigo-400 focus:outline-none text-2xl"
+            aria-label="Toggle mobile menu"
+          >
+            {mobileMenuOpen ? "✖" : "☰"}
+          </button>
         </div>
       </nav>
 
