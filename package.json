@@ -24,4 +24,9 @@
     "eslint-config-next": "15.3.2",
     "@eslint/eslintrc": "^3"
   }
+  "allowScripts": {
+    "@tailwindcss/oxide": true,
+    "sharp": true,
+    "unrs-resolver": true
+  }
 }
