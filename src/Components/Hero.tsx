@@ -24,7 +24,7 @@ const Hero = () => {
         {/* Left Content */}
         <div className="flex-1 space-y-6 text-center md:text-left">
           <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-            Hi, I&rsquo;m <span className="text-[#00FFFF]">Wazeema Amir</span>
+            Hi, I&rsquo;m <span className="text-[#00FFFF]">WAZEEMA AAMIR</span>
           </h1>
 
           <p className={`max-w-xl mx-auto md:mx-0 text-base leading-relaxed ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
